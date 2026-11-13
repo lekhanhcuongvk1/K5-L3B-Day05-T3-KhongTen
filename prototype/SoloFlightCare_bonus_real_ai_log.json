@@ -1,0 +1,32 @@
+{
+  "kind": "REAL_AI_TOOL_DECISION",
+  "recorded_at": "2026-11-13T14:42:56+07:00",
+  "source": "localhost-proxy",
+  "provider": "claude_nghimmo",
+  "model": "nghi/claude-haiku-4.5",
+  "response_id": "msg_01VsfJntN9bnXTkLDNQGkazMJP",
+  "elapsed_ms": 5562,
+  "usage": {
+    "input_tokens": 2109,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 394,
+    "service_tier": "standard"
+  },
+  "input_fixture": "TRV-7Q2K, F1–F4 dữ liệu dựng; F5 thiếu, Q-MOCK/R-MOCK chỉ giả lập",
+  "input_message": "Tối nay còn chỗ cho hai mẹ con không? Không còn thì đổi chuyến gần nhất, không được thì hoàn luôn!",
+  "model_decision": {
+    "tool": "tra_cuu_dat_cho",
+    "flight_id": "",
+    "needs_clarification": true,
+    "explanation": "Khách hỏi chỗ cho 2 người tối nay nhưng không nêu mã chuyến cụ thể; theo F2 phải tra cứu/hỏi lại thay vì tự đổi hoặc hoàn, và chưa xác nhận được chuyến nào đủ 2 ghế.",
+    "reply_vi": "Mình đã ghi nhận yêu cầu cho hai mẹ con, nhưng cần tra cứu lại đặt chỗ TRV-7Q2K và xác nhận chuyến cụ thể trước — hiện chưa có hành động đổi hay hoàn nào được thực hiện."
+  },
+  "policy_enforcement": {
+    "status": "READ_ONLY",
+    "action": "VIEW_FLIGHTS",
+    "reason": "Chỉ xem dữ liệu F1–F3, không thay đổi đặt chỗ."
+  },
+  "real_booking_or_payment_performed": false,
+  "contains_api_key": false
+}
